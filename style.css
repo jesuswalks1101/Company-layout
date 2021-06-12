@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto:wght@300;400&display=swap');
+
+/*
+font-family: 'Mate SC', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+  --blue: rgb(1, 34, 56);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.company-name {
+  text-transform: uppercase;
+  color: orange;
+  font-family: 'Mate SC', serif;
+  padding: 10px 0;
+}
+
+/* Navigation */
+
+.navigation {
+  background-color: rgb(85, 85, 85);
+  padding: 17px 0;
+}
+
+.nav-links {
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding-right: 18px;
+}
+
+.nav-links a:hover {
+  color: black;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.nav-links a:last-child {
+  padding-right: 0;
+}
+
+/* Intro */
+
+.intro {
+  height: 75vh;
+  background-image: url(img/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75%;
+
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  font-family: 'Mate SC', serif;
+}
+
+.intro-container {
+  margin: 1rem 4rem;
+}
+
+.intro_content h1 {
+  color: white;
+}
+
+.intro_content h2 {
+  color: orange;
+}
+
+/* Team Leaders ==================*/
+
+.team_leaders {
+  margin: 10% 15% 0 15%;
+  text-align: center;
+}
+
+.team_leaders h1 {
+  text-transform: uppercase;
+  color: rgb(173, 114, 5);
+  font-family: 'Mate SC', serif;
+}
+
+.team_leaders_info {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team_leaders_info article {
+  margin: 0 3rem;
+}
+
+.team_leaders_info img {
+  width: 300px;
+  height: 300px;
+}
+
+/* People Counts */
+
+.people_counts {
+  background-color: var(--blue);
+}
+
+.counts-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.counts-container article {
+  text-align: center;
+}
+
+.counts-container h2 {
+  font-family: 'Mate SC', serif;
+  font-size: 45px;
+  color: rgb(179, 116, 1);
+}
+
+.counts-container p {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Contain */
+
+.contain {
+  background-image: url(img/nonamedsection.jpg);
+  width: 100%;
+  height: 85vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75%;
+}
+
+/* Contact */
+
+.contacts {
+  margin-top: -20px;
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+}
+
+.contacts-header {
+  margin-top: 100px;
+  max-width: 650px;
+  text-align: center;
+}
+
+.contacts-header p {
+  margin-top: 45px;
+  color: rgb(163, 163, 163);
+
+  font-family: 'Mate SC', serif;
+}
+
+.contacts-header h2 {
+  font-family: 'Mate SC', serif;
+  text-transform: uppercase;
+}
+
+.contact-us {
+  margin-top: 45px;
+
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-us input {
+  background: transparent;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px solid gray;
+  outline: none;
+
+  padding: 5px 0;
+  margin: 0 15px;
+  margin-bottom: 25px;
+  width: 300px;
+
+  color: rgb(163, 163, 163);
+  font-family: 'Mate SC', serif;
+}
+
+.contact-us section {
+  display: flex;
+}
+
+.contact-us select {
+  background: transparent;
+  border: none;
+  color: rgb(163, 163, 163);
+  margin-left: -40px;
+}
+
+#email {
+  width: 636px;
+}
+
+#button {
+  color: white;
+  background-color: rgb(88, 65, 21);
+  border-radius: 3px;
+  cursor: pointer;
+
+  width: 15em;
+  height: 2.5em;
+
+  margin-top: 4em;
+  margin-left: 34em;
+}
+
+#button:hover {
+  background-color: white;
+  color: rgb(88, 65, 21);
+}
+
+.contact-us textarea {
+  background: transparent;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  resize: none;
+  outline: none;
+
+  width: 636px;
+
+  font-family: 'Mate SC', serif;
+}
+
+/* About Us*/
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10em 0;
+}
+
+.about-us-content {
+  border: 2px solid rgb(163, 163, 163);
+  width: 35em;
+  text-align: center;
+
+  margin-left: 1.5em;
+}
+
+.about-us section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-icons h5 {
+  border: 1px solid gray;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+
+.about-icons img {
+  z-index: 2;
+}
+
+/* .about-icons h5::before {
+  content: '';
+  position: absolute;
+
+  background-color: gray;
+  width: 1px;
+  height: 30px;
+
+  transform: translate(50px, -35px);
+} */
+
+.about-icons img {
+  border-radius: 50%;
+}
+
+.about-us-content h1 {
+  text-transform: uppercase;
+  font-family: 'Mate SC', serif;
+}
+
+/* Gallery*/
+
+.gallery-container {
+  text-align: center;
+  padding: 10px 120px 100px 120px;
+}
+
+.gallery-container h1 {
+  text-transform: uppercase;
+  font-family: 'Mate SC', serif;
+  color: rgb(173, 114, 5);
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  width: 20%;
+  height: 550px;
+}
+
+/* .gallery-images img:nth-last-child(6) {
+  display: none;
+}
+
+.gallery-images img:nth-last-child(5) {
+  display: none;
+} */
+
+.change-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(85, 85, 85);
+  width: 100%;
+  height: 60px;
+}
+
+.change-arrows div {
+  border-radius: 50%;
+  padding: 10px 16px;
+  border: 1px solid orange;
+
+  color: orange;
+}
+
+/* Information  =======================*/
+
+.information {
+  background-color: var(--blue);
+  padding: 5em 0 2em 0;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+
+  color: rgb(209, 209, 209);
+}
+.info-container h4 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location p {
+  padding-left: 10px;
+}
+
+.last-section {
+  padding-top: 32px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+.first-icon {
+  padding: 5px 10px;
+}
+
+.second-icon {
+  padding: 5px 9px;
+}
+
+.third-icon {
+  padding: 5px 5px;
+}
+
+.fourth-icon {
+  padding: 5px 8px;
+}
